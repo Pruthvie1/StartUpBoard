@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Startup Board</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#featured-startups">Featured Startups</a></li>
+                    <li><a href="#investor-insights">Investor Insights</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <input type="text" id="search" placeholder="Search...">
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2 class="animate__animated animate__fadeInUp">Welcome to Startup Board</h2>
+            <p class="animate__animated animate__fadeInUp">Connecting investors and startup founders</p>
+            <a href="#featured-startups" class="btn animate__animated animate__fadeInUp">View My Work</a>
+        </div>
+    </section>
+
+    <section id="featured-startups">
+        <div class="container">
+            <h2 class="section-title">Featured Startups</h2>
+            <div class="startup-card" data-details="Founded in 2018, CRED is a platform where you can pay your credit card bills and get rewarded for it. The platform has created a new model where users get “CRED coins” when they pay their bills through the CRED app. These coins can later be redeemed for buying any product, entering a contest, or joining any workshop. The startup is Bangalore based and provides a range of services like credit and a premium catalogue of products to the customers. The startup believes to incentivise people in order to improve their financial behaviour.
+
+According to TechCrunch, CRED is the youngest Indian startup to be valued at around $2.2 billion. This 2-year-old startup has more than 6 million customers and about 22% of all credit card holders. As per the founder and CEO, Kunal Shah, the company is targeting affluent customers and has become one of the most talked-about startups.
+
+Very few companies focus on the high-end base and continue strong growth over the years. CRED is also planning to introduce a feature where CRED coins can be used by over a thousand merchants. The startup is also planning to own an eCommerce store. It is clearly visible that the startup is planning a lot more than just providing reward coins to its customers.">
+                <h3>CRED</h3>
+                <p>Click for more info.</p>
+                <button class="btn details-btn">Details</button>
+            </div>
+            <div class="startup-card" data-details="PharmEasy is an online pharmacy and medical store in India which specialises in OTC products, diagnostic tests, and medical instruments. The company was founded in 2015 in Mumbai, Maharashtra and has seen incredible growth since then.  It is an online pharmacy with every product you could ever imagine in an offline medical store.
+
+During the COVID-19 pandemic, the company has become an essential service that has contributed to its growth. The competitors of PharmEasy in India are 1mg and Netmeds. This health tech startup has raised a massive $350 million, becoming the first Epharmacy unicorn in India. The funding has been raised after the merger of PharmEasy with its rival Medlife.
+
+PharmEasy has acquired a 100 per cent stake in Medlife, and the latter got a 19.95% stake in the merged entity. Both the companies have joined hands and merged in order to beat off the competition from rival players like Netmeds (Reliance Jio), Flipkart and Amazon Pharmacy who have just entered the pharmacy segment in India.
+
+The investors of PharmEasy are the ones who also invested in the startups like Swiggy and Byju’s. The founders Dharmil Sheth and Dr Dhaval Shah have planned to reach over 100,000 pharmacies in the next 12 months in the new geographical markets of India.">
+                <h3>PharmEasy</h3>
+                <p>Click for more info.</p>
+                <button class="btn details-btn">Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="investor-insights">
+        <div class="container">
+            <h2 class="section-title">Investor Insights</h2>
+            <div class="insight">
+                <h3>Success Story One</h3>
+                <p>Details about a successful investment.</p>
+            </div>
+            <div class="insight">
+                <h3>Investor Spotlight</h3>
+                <p>Profile of an influential investor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <div id="blog-posts">
+                <div class="blog-post">
+                    <h3>Latest Trends in Startups</h3>
+                    <p>Insights into the current startup ecosystem.</p>
+                </div>
+                <div class="blog-post">
+                    <h3>Startup Funding Strategies</h3>
+                    <p>Tips for startups to secure funding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form action="contact-form-handler.php" method="post" id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Startup Board. Made by Pruthviraj Patil. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Details</h2>
+            <p id="modal-details"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
